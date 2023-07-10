@@ -54,40 +54,39 @@ public static void main(String args[])
         sum+=a[i];
     }
     System.out.println("Sum of your array : "+ sum);
-    LinkedList<Integer> lst=new LinkedList<>();
+    LinkedList<Integer> linkedList=new LinkedList<>();
     System.out.println("Enter " + n + " number of values:");
     for(i=0;i<n;i++)
     {
         x=obj.nextInt();
-        lst.add(x);
+        linkedList.add(x);
     }
-    Stack <Integer> stk=new Stack<>();
+    Stack <Integer> stack=new Stack<>();
     for(i=n-1;i>=0;i--)
     {
-        stk.push(lst.get(i));
+        stack.push(linkedList.get(i));
     }
-    Queue <Integer> que=new LinkedList<>();
+    Queue <Integer> queue=new LinkedList<>();
     for(i=0;i<n;)
     {
-        que.add(lst.get(i));
+        queue.add(linkedList.get(i));
         i=i+2;
     }
 
-    Map<Integer,Integer> map=new HashMap<>();
-    for(i=1;i<n;)
-    {
-        map.put(i,lst.get(i));
-        i=i+2;
-    }
-    System.out.println("Linked List : " + lst);
-    System.out.println("Stack : " + stk);
-    System.out.println("Queue : " + que);
+    Map<Integer,String> map=new HashMap<>();
+        map.put(1, "Cat");
+        map.put(2, "Dog");
+        map.put(3, "Rat");
+        map.put(4, "Cow");
+    System.out.println("Linked List : " + linkedList);
+    System.out.println("Stack : " + stack);
+    System.out.println("Queue : " + queue);
     System.out.println("Map : " + map);
     System.out.println();
     System.out.println("Enter your Expression: ");
     String exp=obj.next();
     Data in=new Data();
-    if(in.expression(exp)==true)
+    if(in.expression(exp))
     {
         System.out.println("Expression is valid");
     }
