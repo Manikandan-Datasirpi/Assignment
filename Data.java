@@ -77,11 +77,20 @@ public static void main(String args[])
         map.put(1, "Cat");
         map.put(2, "Dog");
         map.put(3, "Rat");
-        map.put(4, "Cow");
+        map.put(4, "Cow");    
     System.out.println("Linked List : " + linkedList);
     System.out.println("Stack : " + stack);
     System.out.println("Queue : " + queue);
-    System.out.println("Map : " + map);
+    System.out.println("Map: ");
+    i=1;
+    for(Map.Entry<Integer,String> entry:map.entrySet())
+    {
+        if(i%2!=0)
+        {
+            System.out.println("Key:"+entry.getKey()+" Value:"+entry.getValue());
+        }
+        i++;
+    }
     System.out.println();
     System.out.println("Enter your Expression: ");
     String exp=obj.next();
