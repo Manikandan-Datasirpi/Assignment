@@ -34,6 +34,7 @@ class Datatypes
         for (int i : a) {
             System.out.println(i);
         }
-        
+         // wrapper class
+        Integer i= Integer.valueOf(10);
     }
 }
