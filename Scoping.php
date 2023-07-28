@@ -18,7 +18,7 @@
     }
     para_fun($name);
     echo "\n";
-    function add($a,$b) //Multi parameter function
+    function add($a,$b) //Multi parameterized function
     {
         $c=$a+$b;
         echo $c;
