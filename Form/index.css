@@ -1,0 +1,53 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+header
+{
+	text-align: center;
+}
+.Main
+{
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.Box
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+	width: 350px;
+	background: orangered;
+	border-radius: 15px;
+}
+.Box table
+{
+	text-align: center;
+	line-height: 70px;
+	font-size: 17px;
+}
+.Box input
+{
+	border-radius: 5px;
+	height: 25px;
+	font-size: 17px;
+}
+.Box div
+{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+.Box div input
+{
+	height: 40px;
+	width: 80px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+}
