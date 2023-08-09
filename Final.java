@@ -1,5 +1,3 @@
-import com.sun.security.jgss.GSSUtil;
-
 public class Final {
     final String name; // Final variable
     static final int age;
