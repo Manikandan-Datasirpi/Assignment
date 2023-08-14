@@ -55,6 +55,11 @@ class Account
 			echo "Amount exceeded Balance";
 		}
 	}
+	public function  __destruct()
+	{
+		echo "<br>";
+		echo "Welcome to Datasirpi";
+	}
 }
 	echo "<br>";
 	echo "Create user account 2: "."<br>";
